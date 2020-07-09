@@ -6,4 +6,4 @@
 
 ## Links
 
-- [Firefox MOD](https://slides.com/diohabara/deck)
+- [Firefox Mod](https://slides.com/diohabara/deck)
