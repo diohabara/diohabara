@@ -1,6 +1,6 @@
 # nanashi
 
-![.github/workflows/ci.yml](https://github.com/diohabara/diohabara/workflows/.github/workflows/ci.yml/badge.svg)
+![CI](https://github.com/diohabara/diohabara/workflows/CI/badge.svg)
 
 ## Skill
 
