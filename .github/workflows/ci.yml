@@ -9,6 +9,5 @@ jobs:
       - uses: docker://pandoc/core:2.9
         with:
           args: |
-            --standalone
             --output=resume.pdf
             README.md
