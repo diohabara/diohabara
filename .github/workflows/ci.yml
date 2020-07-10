@@ -6,14 +6,6 @@ jobs:
   convert_via_pandoc:
     runs-on: ubuntu-18.04
     steps:
-      - uses: actions/checkout@v2
-      - run: |
-          mkdir output
-          echo "::set-env name=FILELIST::README.md"
       - uses: docker://pandoc/core:2.9
         with:
-          args: --output=output/resume.pdf ${{ env.FILELIST }}
-      - uses: actions/upload-artifact@master
-        with:
-          name: output
-          path: output
+          args: --output=resume.pdf README.md
