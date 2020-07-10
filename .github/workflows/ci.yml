@@ -6,10 +6,9 @@ jobs:
   convert_via_pandoc:
     runs-on: ubuntu-18.04
     steps:
-      - uses: actions/checkout@v2
-      - run: |
-          # this will also include README.md
-          echo "::set-env name=FILELIST::$(printf '"%s" ' *.md)"
-      - uses: docker://pandoc/latex:2.9
+      - uses: docker://pandoc/core:2.9
         with:
-          args: --output=result.pdf ${{ env.FILELIST }}
+          args: |>
+            --standalone
+            --output=resume.pdf
+            README.md
