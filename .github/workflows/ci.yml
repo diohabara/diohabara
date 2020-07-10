@@ -7,12 +7,12 @@ jobs:
     runs-on: ubuntu-18.04
     steps:
       - uses: actions/checkout@v2
-      - run: mkdir docs
+      - run: |
+          mkdir docs
+          echo "::set-env name=FILELIST::$(printf '"%s" ' README.md)"
       - uses: docker://pandoc/core:2.9
         with:
-          args: |
-            --output=docs/resume.pdf
-            README.md
+          args: --output=docs/resume.pdf ${{ env.FILELIST }}
       - uses: actions/upload-artifact@master
         with:
           name: docs
