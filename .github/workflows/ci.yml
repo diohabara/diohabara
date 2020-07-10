@@ -1,7 +1,5 @@
 name: CI
-
 on: push
-
 jobs:
   convert_via_pandoc:
     runs-on: ubuntu-18.04
@@ -9,5 +7,5 @@ jobs:
       - uses: docker://pandoc/core:2.9
         with:
           args: |
-            --output=resume.pdf 
+            --output=resume.pdf
             README.md
