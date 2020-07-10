@@ -8,12 +8,12 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - run: |
-          mkdir docs
-          echo "::set-env name=FILELIST::$(printf '"%s" ' README.md)"
+          mkdir output
+          echo "::set-env name=FILELIST::README.md"
       - uses: docker://pandoc/core:2.9
         with:
-          args: --output=docs/resume.pdf ${{ env.FILELIST }}
+          args: --output=output/resume.pdf ${{ env.FILELIST }}
       - uses: actions/upload-artifact@master
         with:
-          name: docs
-          path: docs
+          name: output
+          path: output
