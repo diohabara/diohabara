@@ -11,7 +11,7 @@ jobs:
       - run: mkdir output
       - uses: maxheld83/pandoc@v2
         with:
-          args: "--standalone -f markdown_github --output=output/resume.pdf README.md"
+          args: "--standalone --pdf-engine=xelatex -f markdown_github --output=output/resume.pdf README.md"
       - uses: actions/upload-artifact@master
         with:
           name: resume
