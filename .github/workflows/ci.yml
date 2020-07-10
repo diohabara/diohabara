@@ -8,4 +8,6 @@ jobs:
     steps:
       - uses: docker://pandoc/core:2.9
         with:
-          args: --output=resume.pdf README.md
+          args: |
+            --output=resume.pdf 
+            README.md
