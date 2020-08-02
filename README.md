@@ -1,7 +1,3 @@
-# nanashi
-
-![CI](https://github.com/diohabara/diohabara/workflows/CI/badge.svg)
-
 My softwares follow [LICENSE](https://github.com/diohabara/diohabara/blob/master/LICENSE) if they are not licensed.
 
 ## Skill
