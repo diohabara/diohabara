@@ -6,4 +6,4 @@ My softwares follow [LICENSE](https://github.com/diohabara/diohabara/blob/master
 
 ## Links
 
-- [Scrapbox](https://scrapbox.io/xeqilum/)
+// TODO
