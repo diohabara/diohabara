@@ -6,5 +6,4 @@ My softwares follow [LICENSE](https://github.com/diohabara/diohabara/blob/master
 
 ## Links
 
-- [Firefox Mod](https://slides.com/diohabara/deck)
 - [Scrapbox](https://scrapbox.io/xeqilum/)
