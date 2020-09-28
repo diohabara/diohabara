@@ -1,12 +1,3 @@
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=diohabara)](https://github.com/anuraghazra/github-readme-stats)
 [![diohabara's github stats](https://github-readme-stats.vercel.app/api?username=diohabara)](https://github.com/anuraghazra/github-readme-stats)
 
 My softwares follow [LICENSE](https://github.com/diohabara/diohabara/blob/master/LICENSE) if they are not licensed.
-
-## Skill
-
-- Emacs:alien: powered by Doom:japanese_goblin:
-
-## Links
-
-// TODO
