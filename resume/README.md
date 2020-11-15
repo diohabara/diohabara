@@ -9,5 +9,5 @@
 ## build
 
 ```sh
-tectonic resume.pdf
+tectonic resume.tex
 ```
