@@ -5,9 +5,32 @@
 ## Dependencies
 
 - `tectonic`
+- `vscode`
+    - `LaTeX Workshop`
 
-## build
+## Instruction
 
-```sh
-tectonic resume.tex
+All you have to do to build LaTeX files is write the following codes in your `settings.json` in VSCode.
+
+```json
+  // ===latex-workshop===
+  "latex-workshop.latex.recipes": [
+    {
+      "name": "tectonic",
+      "tools": [
+        "tectonic"
+      ]
+    }
+  ],
+  "latex-workshop.latex.tools": [
+    {
+      "name": "tectonic",
+      "command": "tectonic",
+      "args": [
+        "--synctex",
+        "%DOC%.tex"
+      ],
+      "env": {}
+    }
+  ],
 ```
