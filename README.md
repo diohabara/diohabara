@@ -3,3 +3,4 @@
 My softwares follow [LICENSE](https://github.com/diohabara/diohabara/blob/master/LICENSE) if they are not licensed.
 
 - [resume](https://github.com/diohabara/diohabara/blob/master/resume/resume.pdf)
+- [blog](https://diohabara.github.io/)
