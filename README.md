@@ -4,3 +4,4 @@ My softwares follow [LICENSE](https://github.com/diohabara/diohabara/blob/master
 
 - [resume](https://github.com/diohabara/diohabara/blob/master/resume/resume.pdf)
 - [blog](https://diohabara.github.io/)
+- [projects](./projects.md)
