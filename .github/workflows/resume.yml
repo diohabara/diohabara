@@ -1,18 +1,20 @@
 on:
   push:
     paths:
-      - '**.tex'
-
+      - "**.tex"
 jobs:
   latex-job:
     runs-on: ubuntu-latest
-    name: A job to Compile Latex file
     steps:
-    - uses: actions/checkout@v1
-    - name: Compilation
-      uses: vinay0410/tectonic-action@master
-      env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      with:
-        tex_path: 'resume/resume.tex'
-        push: 'yes'
+      - name: compile resume
+        uses: actions/checkout@v2
+      - uses: wtfjoke/setup-tectonic@v1
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+      - name: run tectonic
+        run: tectonic resume/resume.tex
+      - name: upload pdf
+        uses: actions/upload-artifact@v2
+        with:
+          name: resume
+          path: resume/main.pdf
