@@ -2,6 +2,7 @@ on:
   push:
     paths:
       - "**.tex"
+      - "**.yml"
 jobs:
   latex-job:
     runs-on: ubuntu-latest
