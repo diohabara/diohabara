@@ -6,7 +6,7 @@
 
 - `tectonic`
 - `vscode`
-    - `LaTeX Workshop`
+  - `LaTeX Workshop`
 
 ## Instruction
 

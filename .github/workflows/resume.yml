@@ -13,9 +13,9 @@ jobs:
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
       - name: run tectonic
-        run: tectonic resume/resume.tex
+        run: tectonic -X build
       - name: upload pdf
         uses: actions/upload-artifact@v2
         with:
           name: resume
-          path: resume/resume.pdf
+          path: build/resume/resume.pdf
