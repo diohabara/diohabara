@@ -1,21 +1,22 @@
+name: "Build LaTex Document"
+
 on:
   push:
     paths:
-      - "**.tex"
-      - "**.yml"
+      - "src/**.tex"
 jobs:
-  latex-job:
+  build-and-push-artifact:
     runs-on: ubuntu-latest
     steps:
-      - name: compile resume
-        uses: actions/checkout@v2
+      - name: Checkout
+        uses: actions/checkout@v3
       - uses: wtfjoke/setup-tectonic@v1
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
-      - name: run tectonic
+      - name: Run Tectonic
         run: tectonic -X build
-      - name: upload pdf
-        uses: actions/upload-artifact@v2
+      - name: Upload pdf
+        uses: actions/upload-artifact@v3
         with:
           name: resume
           path: build/resume/resume.pdf
