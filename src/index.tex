@@ -1,80 +1,80 @@
-\documentclass[12pt]{article}
-\usepackage{hyperref}
+\documentclass[10pt]{article}
 \usepackage[T1]{fontenc}
 \usepackage{newpxtext, newpxmath}
 \usepackage{dirtytalk}
 \usepackage[margin=15mm]{geometry}
+\usepackage{fancyhdr}
+\usepackage{cmbright} % font
+\usepackage{hyperref}
+% configuration
+% hyperlink coloring
 \hypersetup{
     colorlinks=true,
     filecolor=magenta,
     urlcolor=cyan,
 }
 \urlstyle{same}
+% set header
+\pagestyle{fancy}
+\lhead{
+  Curriculum Vitae/Resume,
+  Takemaru Kadoi,
+  \href{https://github.com/diohabara/}{GitHub}
+  , \href{https://www.linkedin.com/in/takemaru-kadoi}{LinkedIn}
+  , \href{mailto:diohabara@gmail.com}{diohabara@gmail.com}
+}
+% macro
 
+% content
 \title{\vspace{-1cm}Curriculum Vitae/Resume}
 \author{Takemaru Kadoi}
 \date{}
 
-\usepackage{fancyhdr}
-\pagestyle{fancy}
-  \lhead{
-    Curriculum Vitae/Resume,
-    Takemaru Kadoi,
-  }
-
 \begin{document}
-
-% \maketitle
-
-\section*{Contacts}
-  \{
-    \href{https://github.com/diohabara/}{GitHub}
-    , \href{https://www.linkedin.com/in/takemaru-kadoi}{LinkedIn}
-    , \href{mailto:diohabara@gmail.com}{diohabara@gmail.com}
-  \}
 
 \section*{Educations}
   \subsection*{The University of Texas at Dallas, August 2022 - Present}
-    Graduate Student in Computer Science, Computer Science Department
+    Graduate Student in Computer Science, Erik Jonsson School of Engineering and Computer Science, ECSS
   \subsection*{The University of Tokyo, April 2017 - March 2022}
     Bachelor in EECS(Electrical Electronics and Computer Science), Department of Engineering
     \\
     Wrote a senior thesis, "Type- and Sequential Effect-Guided Programming by Example," supervised by \href{https://www.cad.t.u-tokyo.ac.jp/en/}{Masahiro FUJITA}
   \subsection*{Stanford University, June 2019 - September 2019}
-    Exchange Student, Computer Science
+    Exchange Student in Computer Science
+    \\
+    Took courses of "CS 161 Design and Analysis of Algorithms" and "CS 103 Mathematical Foundations of Computing."
 
 \section*{Employments}
   \subsection*{\href{https://www.indeed.com/about}{Indeed}, Software Engineer Intern, July 2022 - August 2022}
-    I created a PoC data pipeline for its data infrastructure so that the data team and other teams can easily collaborate with the same API in different programming languages.
+    Created a proof-of-concept data pipeline for its data infrastructure so that the data team and other teams could easily collaborate with the same API in different programming languages.
+    The implementation allowed more people to analyze data in the company.
   \subsection*{\href{https://hatenacorp.jp/}{Hatena}, Software Engineer Intern, February 2022 - May 2022}
-    I improved the developer experience by migrating from Jenkins to GitHub Actions and speeding up CI/CD.
+    Migrated CI/CD pipelines from Jenkins to GitHub Actions and sped them up, resulting in better production quality by improving the development cycle and increasing the number of reviews and deployments.
   \subsection*{\href{https://q-squared.jp}{Q-Squared}, Software Engineer Intern, June 2021 - February 2022}
-    I made a proof of concept for network acceleration.
-    \\
-    \href{https://flossy-era-126.notion.site/DPDK-Potential-in-Finance-840b0d289273495192eb04d97d268eeb}{Blog post in Japanese}
+    Created a proof-of-concept for network acceleration.
+    My work contributed to the decision about what the company would select as a network library for the company.
   \subsection*{\href{https://about.mercari.com/en}{Mercari}, Software Engineer Intern, August 2020 - September 2020}
-    I made a static analysis tool for the Go programming language.
+    Created a static analysis tool for the Go programming language.
   \subsection*{\href{https://www.flywheel.jp}{FLYWHEEL}, Software Engineer Intern, July 2020 - August 2020}
-    I made a real-time layer of the data platform.
+    Introduced the speed layer of the \href{https://www.databricks.com/glossary/lambda-architecture}{lambda architecture} in the corporate data platform.
+    The new layer potentially expanded the corporate business because streaming data analytics was useful for real-time analysis.
     \\
-    \href{https://www.flywheel.jp/topics/20200917}{Blog post in Japanese}
+    \href{https://www.flywheel.jp/topics/20200917}{Related Blog post in Japanese}
   \subsection*{\href{https://wantedlyinc.com/ja}{Wantedly}, Software Engineer Intern, August 2019 - September 2019}
-    I improved existing functions of \href{https://people.wantedly.com/}{Wantedly People}, an HR application, and added new functionalities.
+    Improved existing functions of \href{https://people.wantedly.com/}{Wantedly People}, an HR application, and added new functionalities.
+    Those new functionalities were related to user management and enabled the company to find malicious users.
 
 \section*{Projects}
+  \subsection*{A toy C compiler written in C: \href{https://github.com/diohabara/ccc}{ccc}}
+    Wrote a toy C compiler with an original lexer, parser, and code generator as hobby.
   \subsection*{The top 3 in \href{http://iccad-contest.org/2021/}{ICCAD 2021 CAD Contest}}
-    \say{The CAD Contest at ICCAD is a challenging, multi-month research and development competition focusing on advanced, real-world problems in the field of Electronic Design Automation (EDA).}
-    \\
-    I worked on circuit generation with other lab members in B4.
+    Teamed up with other B4 lab members and worked on the circuit generation section.
+    My main task was testing what combinations of libraries we should choose, and I wrote objective evaluations of them based on our criteria, actual statistics, and goal.
+  \subsection*{BrainF**k interpreter on Raspberry Pi written in Python: \href{https://github.com/diohabara/muscle_fuck}{muscle\_f**k}}
+    Created a Raspberry Pi app to enable people to get exercise while programming in B4
   \subsection*{Implementation of TCP/IP protocol with \href{https://www.klab.com/en/}{KLab}}
-    I implemented TCP/IP protocol in C with mentors and other participants as an internship project in B4.
-  \subsection*{BrainF**k interpreter on Raspberry Pi: \href{https://github.com/diohabara/muscle_fuck}{muscle\_f**k}}
-    I created a Raspberry Pi app to enable people to get exercise while programming in B4
+    Implemented TCP/IP protocol in C with mentors and other participants as an internship project in B4.
   \subsection*{Addition of some functionalities to \href{https://slides.com/diohabara/deck}{Firefox}}
-    I added additional bookmark properties to Firefox as a school project in B3.
-
-\section*{Hobby repositories}
-  \subsection*{A toy C compiler: \href{https://github.com/diohabara/ccc}{ccc}}
-    I wrote a toy C compiler with an original lexer, parser, and code generator.
+    Added additional bookmark properties to Firefox as a school project in B3.
 
 \end{document}
