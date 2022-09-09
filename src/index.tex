@@ -6,6 +6,28 @@
 \usepackage{fancyhdr}
 \usepackage{cmbright} % font
 \usepackage{hyperref}
+% reduce space
+\usepackage{titlesec}
+\titlespacing* % the star = don't indent first paragraph after
+    {\section} % which command you want to set the spacing for
+    {0pt} % spacing to the left of heading
+    {1ex} % spacing before the heading
+    {1ex} % spacing after the heading
+\titlespacing*
+    {\subsection}
+    {0pt}
+    {1ex}
+    {1ex}
+\titlespacing*
+    {\subsubsection}
+    {0pt}
+    {1ex}
+    {1ex}
+\usepackage{multicol} % multiple column listing
+% reduce space between and above listing
+\setlength{\columnsep}{10pt}
+\setlength{\multicolsep}{0pt}
+\usepackage{enumitem}
 % configuration
 % hyperlink coloring
 \hypersetup{
@@ -32,17 +54,56 @@
 
 \begin{document}
 
-\section*{Educations}
+\section*{Education}
   \subsection*{\underline{The University of Texas at Dallas}, 2022/08 - Present \hfill Richardson, Texas}
     Master of Science in Computer Science
+    \subsubsection*{Relevant Courses}
+    \begin{multicols}{2}
+      \setlist{nolistsep}
+      \begin{itemize}[noitemsep]
+        \item Advanced Computer Networks(currently enrolled)
+        \item Discrete Structures(currently enrolled)
+        \item System Security and Binary Analysis(currently enrolled)
+      \end{itemize}
+    \end{multicols}
+
   \subsection*{\underline{The University of Tokyo}, 2017/04 -  2022/03 \hfill Tokyo, Japan}
     Bachelor of Science in Electrical Engineering \& Computer Science
     \\
     Studied computer science at Stanford University as an exchange student from 06/2019-08/2019
     \\
     Wrote a senior thesis, "Type- and Sequential Effect-Guided Programming by Example," supervised by Prof Masahiro FUJITA
+    \subsubsection*{Relevant Courses}
+    \begin{multicols}{2}
+      \setlist{nolistsep}
+      \begin{itemize}[noitemsep]
+        \item Algorithms
+        \item Artificial Intelligence
+        \item Basics In Mathematics I/II
+        \item Computer Networks
+        \item Computer Software I/II
+        \item Digital Circuits
+        \item Distributed Systems
+        \item Electronic Information Processing Devices
+        \item Fundamental Exercise on Programming
+        \item Graduation Thesis
+        \item Hardware Design
+        \item Image Media Technologies
+        \item Information Security
+        \item Information Theory
+        \item Introduction to Algorithms
+        \item Introduction to Python Programming
+        \item Introduction to Statistics
+        \item Language Processing I
+        \item Operating Systems
+        \item Probability and Statistics
+        \item Programming Languages
+        \item Statistical Machine Learning
+        \item Theory of Computation
+      \end{itemize}
+    \end{multicols}
 
-\section*{Employments}
+\section*{Work Experience}
   \subsection*{\underline{Software Engineer Intern}, Indeed, 2022/06 - 2022/08 \hfill Tokyo, Japan}
     Created a proof-of-concept data pipeline for its data infrastructure so that the data team and other teams could easily collaborate with the same API in different programming languages.
     The implementation allowed more people to analyze data in the company.
@@ -60,7 +121,7 @@
     Improved existing functions of Wantedly People, an HR application, and added new functionalities.
     Those new functionalities were related to user management and enabled the company to find malicious users.
 
-\section*{Research Experiences}
+\section*{Research Experience}
   \subsection*{"Type- and Sequential Effect-Guided Programming by Example," supervised by Prof. Masahiro FUJITA}
     Wrote the bachelor thesis on program synthesis.
     Implemented an ML-like target language in OCaml.
@@ -84,5 +145,56 @@
   \subsection*{Implementation of bookmark functionalities to Firefox}
     Added additional bookmark functionalities to Firefox with another member from the same department as a school project in B3.
     Built Firefox and modified the source code.
+
+\section*{Technical Skills}
+  \subsection*{Programming Languages}
+    = \{
+      C/C++,
+      Common Lisp/Scheme/Racket,
+      Coq,
+      Go,
+      HCL,
+      Haskell,
+      Java/Scala/Kotlin,
+      JavaScript/TypeScript,
+      OCaml,
+      Python3,
+      Ruby,
+      Rust,
+      Shell Script,
+    \}
+  \subsection*{Cloud}
+    = \{
+      AWS(
+        EC2,
+        S3,
+        Kinesis
+      ),
+      GitHub Actions,
+    \}
+  \subsection*{Others}
+    = \{
+      Docker,
+      Flask,
+      Flink,
+      Kafka,
+      OCamllex/Menhir,
+      Pandas,
+      Pandas,
+      PyTorch,
+      React,
+      Ruby on Rails,
+      Spark,
+      scikit-learn,
+    \}
+
+\section*{Interests}
+  = \{
+    Formal Verification,
+    Program Synthesis,
+    Programming Languages,
+    System Programming,
+    Type Theory,
+  \}
 
 \end{document}
