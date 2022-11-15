@@ -36,20 +36,26 @@
     urlcolor=cyan,
 }
 \urlstyle{same}
+\usepackage{amsmath}
+\usepackage{amssymb}
+% font
+\usepackage{fontawesome}
+
+% macro
+
 % set header
 \pagestyle{fancy}
 \lhead{
   % Curriculum Vitae/Resume
   Resume
   , Takemaru Kadoi
-  , \href{mailto:diohabara@gmail.com}{diohabara@gmail.com}
-  , \href{https://github.com/diohabara/}{GitHub}
-  , \href{https://www.linkedin.com/in/takemaru-kadoi}{LinkedIn}
+  , \faicon{envelope}
+  \href{mailto:diohabara@gmail.com}{diohabara@gmail.com}
+  , \faicon{github-alt}
+  \href{https://github.com/diohabara/}{GitHub}
+  , \faicon{linkedin} 
+  \href{https://www.linkedin.com/in/takemaru-kadoi}{LinkedIn}
 }
-\usepackage{amsmath}
-\usepackage{amssymb}
-
-% macro
 
 % content
 \title{\vspace{-1cm}Curriculum Vitae/Resume}
@@ -82,22 +88,31 @@
     The new layer potentially expanded the corporate business because streaming data analytics was useful for real-time analysis.
 
 \section*{Research Experience}
-  \subsection*{"Type- and Sequential Effect-Guided Programming by Example," supervised by Prof. Masahiro FUJITA}
-    Wrote the bachelor thesis on program synthesis.
+  \subsection*{Undergraduate senior research supervised by Prof. Masahiro FUJITA}
+    Wrote a bachelor thesis on program synthesis.
     Implemented an ML-like target language in OCaml.
-    Its synthesizer used the language's type and effect system and given examples.
+    Its synthesizer utilized the language's type-, effect-system and given examples.
 
 \section*{Projects}
-  \subsection*{NSA Codebreaker Challenge 2022: \textbf{by myself}}
-    Currently engaged in this CTF-style security contest.
-  \subsection*{A toy C compiler written in C itself: \href{https://github.com/diohabara/ccc}{ccc}: \textbf{by myself}}
-    Implemented a toy C compiler in C with a lexer, parser, and code generator.
-    It generates x86-64 code.
-  \subsection*{The top 3 in ICCAD 2021 CAD Contest: \textbf{in teams of 6}}
-    Teamed up with other lab members and worked on the circuit generation section in B4.
-    Wrote evaluations of methods based on our criteria, actual statistics, and goal.
-    My main task was testing what combination of methods we should choose.
-  \subsection*{BrainF**k interpreter on Raspberry Pi written in Python: \href{https://github.com/diohabara/muscle_fuck}{muscle\_f**k}: \textbf{by myself}}
-    Implemented a Raspberry Pi application to enable people to get exercise while programming in B4
+  \begin{multicols}{2}
+  \subsection*{Personal Project}
+    \subsubsection*{BrainF**k interpreter on Raspberry Pi written in Python}
+      \faicon{github} \href{https://github.com/diohabara/muscleFuck}{https://github.com/diohabara/muscleFuck}
+      \\Implemented a Raspberry Pi application to enable people to get exercise while programming in B4
+    \subsubsection*{Daily report bot written in Rust}
+      \faicon{github} \href{https://github.com/diohabara/honjitsu}{https://github.com/diohabara/honjitsu}
+      \\Created a bot that collects personal information and creates a daily report
+    \subsubsection*{A toy C compiler written in C itself}
+      \faicon{github} \href{https://github.com/diohabara/ccc}{https://github.com/diohabara/ccc}
+      \\Implemented a toy C compiler in C with a lexer, parser, and code generator.
+      It generates x86-64 code.
+    \subsubsection*{NSA Codebreaker Challenge 2022}
+      Currently engaged in this CTF-style security contest.
 
+  \subsection*{Team Project}
+    \subsubsection*{The top 3 in ICCAD 2021 CAD Contest}
+      Teamed up with other lab members and worked on the circuit generation section in B4.
+      Wrote evaluations of methods based on our criteria, actual statistics, and goal.
+      My main task was testing what combination of methods we should choose.
+  \end{multicols}
 \end{document}
