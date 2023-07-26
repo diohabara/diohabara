@@ -6,4 +6,4 @@ My softwares follow this [LICENSE](https://github.com/diohabara/diohabara/blob/m
 
 - [resume](https://www.overleaf.com/read/wbkbvnmqvmdx)
 - [blog](https://diohabara.github.io/)
-- []
+- [log](https://gist.github.com/diohabara/dec27297869ae93913018ae3746580c4)
