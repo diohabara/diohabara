@@ -1,0 +1,29 @@
+# [ccc](https://github.com/diohabara/ccc)
+
+- 2023/07/28
+  - [x] add string literal initializer for global variables
+  - [x] allow global variabl initializers to have an addend
+  - [x] accept void as a parameter list
+  - [x] support file-scope functions
+- 2023/07/27
+  - [x] allow array length omission
+  - [x] struct initializer
+  - [x] scalar global initializer
+  - [x] global array and struct  initializer
+  - [x] omit parans for intiializers
+  - [x] skip excessive initilizer elements
+- 2023/07/26
+  - [x] ternary operator
+  - [x] constant expression
+  - [x] array initializers
+  - [x] excess array initializers
+  - [x] string literal initailizer
+- 2023/07/25
+  - [x] switch
+  - [x] void function
+  - [x] incomplete struct
+  - [x] `<<`, `>>`, `<<=`, `>>=`
+- 2023/07/24
+  - [x] goto and labeled statement
+- 2023/07/23
+  - [x] add continue statement
