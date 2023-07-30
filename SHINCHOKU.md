@@ -1,36 +1,5 @@
-# Resume
+# Studies
 
-![CI](https://github.com/diohabara/diohabara/workflows/CI/badge.svg)
+## DIY
 
-## Dependencies
-
-- `tectonic`
-- `vscode`
-  - `LaTeX Workshop`
-
-## Instruction
-
-All you have to do to build LaTeX files is write the following codes in your `settings.json` in VSCode.
-
-```json
-  // ===latex-workshop===
-  "latex-workshop.latex.recipes": [
-    {
-      "name": "tectonic",
-      "tools": [
-        "tectonic"
-      ]
-    }
-  ],
-  "latex-workshop.latex.tools": [
-    {
-      "name": "tectonic",
-      "command": "tectonic",
-      "args": [
-        "--synctex",
-        "%DOC%.tex"
-      ],
-      "env": {}
-    }
-  ],
-```
+- [ccc](https://gist.githubusercontent.com/diohabara/dec27297869ae93913018ae3746580c4/raw/4eacca051668b35b54241ff40d63ab0651a6599e/ccc.md)
