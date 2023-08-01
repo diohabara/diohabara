@@ -1,5 +1,7 @@
 # [ccc](https://github.com/diohabara/ccc)
 
+- 2023/07/31
+  - [ ] 
 - 2023/07/28
   - [x] add string literal initializer for global variables
   - [x] allow global variabl initializers to have an addend
