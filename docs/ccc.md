@@ -2,6 +2,7 @@
 
 - 2023/08/01
   - [x] extern keyword for non-pointer
+  - [ ] extern keyword for pointer
 - 2023/07/31
   - [x] preprocess
 - 2023/07/28
