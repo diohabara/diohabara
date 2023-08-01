@@ -1,7 +1,7 @@
 # [ccc](https://github.com/diohabara/ccc)
 
 - 2023/08/01
-  - [ ] extern keyword
+  - [x] extern keyword for non-pointer
 ttribute
 - 2023/07/31
   - [x] preprocess
