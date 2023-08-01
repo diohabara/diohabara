@@ -1,8 +1,8 @@
 # [ccc](https://github.com/diohabara/ccc)
 
 - 2023/08/01
-  - [x] extern keyword for non-pointer
-  - [ ] extern keyword for pointer
+  - [x] extern keyword for non-pointers
+  - [ ] extern keyword for pointers
 - 2023/07/31
   - [x] preprocess
 - 2023/07/28
