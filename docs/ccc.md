@@ -2,7 +2,7 @@
 
 - 2023/08/01
   - [ ] extern keyword
-  - [ ] a
+  - [ ] attribute
 - 2023/07/31
   - [x] preprocess
 - 2023/07/28
