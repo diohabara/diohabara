@@ -1,5 +1,7 @@
 # [ccc](https://github.com/diohabara/ccc)
 
+- 2023/08/01
+  - [ ] extern
 - 2023/07/31
   - [x] preprocess
 - 2023/07/28
