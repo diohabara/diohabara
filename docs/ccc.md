@@ -1,5 +1,6 @@
 # [ccc](https://github.com/diohabara/ccc)
 
+- 2023/08/01
   - [ ] self-host
 - 2023/08/01
   - [x] extern keyword for non-pointers
