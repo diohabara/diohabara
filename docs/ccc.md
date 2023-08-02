@@ -3,7 +3,7 @@
 - 2023/08/01
   - [x] extern keyword for non-pointers
   - [x] extern keyword for pointers
-  - [ ] const keyword
+  - [x] skip const keyword
   - [ ] skip `__attribute__`
   - [ ] self-host
 - 2023/07/31
