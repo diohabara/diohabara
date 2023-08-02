@@ -5,7 +5,6 @@
   - [x] extern keyword for pointers
   - [x] skip const keyword
   - [x] skip `__attribute__`
-  - [ ] self-host
 - 2023/07/31
   - [x] preprocess
 - 2023/07/28
