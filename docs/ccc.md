@@ -4,7 +4,7 @@
   - [x] extern keyword for non-pointers
   - [x] extern keyword for pointers
   - [x] skip const keyword
-  - [ ] skip `__attribute__`
+  - [x] skip `__attribute__`
   - [ ] self-host
 - 2023/07/31
   - [x] preprocess
