@@ -1,7 +1,7 @@
 # [ccc](https://github.com/diohabara/ccc)
 
 - 2023/08/02
-  - [ ] parse global `typedef`
+  - [x] parse global `typedef`
   - [ ] self-host
 - 2023/08/01
   - [x] extern keyword for non-pointers
