@@ -1,1 +1,1 @@
-# [Chisel RISC-V](https://github.com/diohabara/chisel_riscv.git)
+# [Chisel RISC-V](https://github.com/diohabara/chisel_riscv)
