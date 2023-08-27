@@ -1,5 +1,6 @@
 # [RISC-V CPU by Chisel](https://github.com/diohabara/chisel_riscv)
 
+- 2023/08/30
 - 2023/08/29
   - [x] 第二十五章読了
   - [ ] 第二十六章読了
