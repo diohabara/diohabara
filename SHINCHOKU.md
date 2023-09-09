@@ -7,4 +7,4 @@
 
 ## OSS
 
-- [ ] [LLVM]
+- [ ] [LLVM](https://github.com/diohabara/diohabara/blob/master/docs/LLVM.md)
