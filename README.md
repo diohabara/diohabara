@@ -4,4 +4,3 @@ My softwares follow this [LICENSE](https://github.com/diohabara/diohabara/blob/m
 
 - [resume](https://www.overleaf.com/read/wbkbvnmqvmdx)
 - [blog](https://diohabara.github.io/)
-- [log](./SHINCHOKU.md)
