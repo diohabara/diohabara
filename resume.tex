@@ -1,0 +1,240 @@
+\documentclass[10pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage{newpxtext, newpxmath}
+\usepackage{dirtytalk}
+\usepackage[margin=15mm]{geometry}
+\usepackage{fancyhdr}
+\setlength{\headheight}{13pt} % fix error related to fancyhdr
+\usepackage{cmbright} % font
+\usepackage{hyperref}
+% reduce space
+\usepackage{titlesec}
+\titlespacing* % the star = don't indent first paragraph after
+    {\section} % Which command do you want to set the spacing for?
+    {0pt} % spacing to the left of the heading
+    {1ex} % spacing before the heading
+    {1ex} % spacing after the heading
+\titlespacing*
+    {\subsection}
+    {0pt}
+    {1ex}
+    {1ex}
+\titlespacing*
+    {\subsubsection}
+    {0pt}
+    {1ex}
+    {1ex}
+\usepackage{multicol} % multiple column listing
+% reduce space between and above listing
+\setlength{\columnsep}{10pt}
+\setlength{\multicolsep}{0pt}
+\usepackage{enumitem}
+% configuration
+% hyperlink coloring
+\hypersetup{
+    colorlinks=true,
+    filecolor=magenta,
+    urlcolor=cyan,
+}
+\urlstyle{same}
+\usepackage{amsmath}
+\usepackage{amssymb}
+% font
+\usepackage{fontawesome5} % ref: http://mirrors.ibiblio.org/CTAN/fonts/fontawesome5/doc/fontawesome5.pdf
+\usepackage{tabularx}
+\vfill % This pushes the following content to the bottom of the page
+
+\renewcommand\footnoterule{} % This removes the footnote rule
+
+% macro
+
+% set header
+\pagestyle{fancy}
+\lhead{
+    % Curriculum Vitae/Resume
+    \faIcon{file-signature} \textbf{Resume}
+    | \faIcon{signature}
+    Takemaru KADOI
+    | \faIcon{envelope}
+    \href{mailto:diohabara@gmail.com}{diohabara@gmail.com}
+    | \faIcon{github-alt}
+    \href{https://github.com/diohabara/}{GitHub}
+    | \faIcon{linkedin}
+    \href{https://www.linkedin.com/in/takemaru-kadoi}{LinkedIn}
+}
+
+% content
+\title{\vspace{-1cm}Curriculum Vitae/Resume}
+\author{Takemaru KADOI}
+\date{}
+
+\begin{document}
+
+\section*{\faIcon{university} Education}
+    \subsection*{\underline{The University of Texas at Dallas}, 08/2022 - 05/2024 \hfill Richardson, Texas}
+        Master of Science in \textbf{Computer Science}. Researched software engineering and security topics supervised by Asst. Prof. Kangkook JEE. Officer of UTDallas Computer Security Group(CSG).
+
+    \subsection*{\underline{The University of Tokyo}, 04/2017 -  03/2022 \hfill Tokyo, Japan}
+        \noindent
+        Bachelor of Engineering in \textbf{Electrical Engineering \& Computer Science}. Wrote a bachelor thesis \href{https://github.com/diohabara/bthesis}{\emph{"Type- and Sequential Effect-Guided Programming by Example"}} on program synthesis using a type and effect system and given examples supervised by Prof. Masahiro FUJITA.
+
+\section*{\faIcon{suitcase} \faIcon{flask} \faIcon{chalkboard-teacher} Experience}
+    \subsection*{\faIcon{flask} \underline{Research Assistant}, UTDallas, 05/2023 - 11/2023 \hfill Richardson, Texas}
+        Conducting research about a secure decompiler and a secure database management system under the supervision of Asst. Prof. Kangkook JEE.
+    \subsection*{\faIcon{chalkboard-teacher} \underline{Teaching Assistant}, UTDallas, 01/2023 - 05/2023, 09/2023 - 05/2024 \hfill Richardson, Texas}
+        2023 Spring
+        \faVirus \; CS 4301 Cyber Attacks and Defense Laboratory (CANDL)
+        \quad
+        \faVirus \; CS 6348 Data and Applications Security
+        \\
+        2023 Fall
+        \faVirus \; CS 6332 Systems Security and Malicious Code Analysis \;
+        \quad
+        \faWindows \; CS 4348 Operating System Concept
+        \\
+        2024 Spring
+        \faIcon{language} \;CS \{6371, 4301\} Advanced Programming Languages
+        \quad
+        \faIcon{language} \; CS 4337 Programming Language Paradigms
+    \subsection*{\faIcon{suitcase} \underline{Software Engineer Intern}, Indeed, 06/2022 - 08/2022 \hfill Tokyo, Japan}
+        Prepared a PoC data pipeline for its data infrastructure so that the data team and other teams could easily collaborate with the same API in different programming languages.
+        The implementation allowed more than 10 people to analyze the data cooperatively.
+    \subsection*{\faIcon{suitcase} \underline{Software Engineer Intern}, Hatena, 02/2022 - 06/2022 \hfill Tokyo, Japan}
+        Migrated and enabled parallelism of the CI/CD pipelines from Jenkins to GitHub Actions and sped them up by more than 3x, resulting in better production quality by improving the development cycle and increasing the number of reviews and deployments.
+    \subsection*{\faIcon{suitcase} \underline{Software Engineer Intern}, FLYWHEEL, 07/2020 - 08/2020 \hfill Tokyo, Japan}
+        Introduced the speed layer of the lambda architecture in the corporate data platform.
+        The new layer potentially expanded the corporate business because streaming data analytic would be helpful for real-time analysis.
+
+% TODO:
+%\section*{\faIcon{pen-square} Publications}
+%\begin{itemize}
+%  \item "Title A", Authors..., \underline{Takemaru Kadoi}, Conference, Date
+%  \item "Title B", Authors..., \underline{Takemaru Kadoi}, Conference, Date
+%\end{itemize}
+
+\section*{\faIcon{code-branch} Projects}
+  \begin{multicols}{2}
+    % \noindent
+    % \textbf{
+    %     \faIcon{user}        \href{https://github.com/search?q=repo\%3ARust-GCC\%2Fgccrs+diohabara&type=commits}{\faIcon{github}}
+    %     \href{https://github.com/Rust-GCC/gccrs/}{\underline{gccrc}}: GCC Front-End for Rust
+    % }
+    %     Made no fewer than two commits related to AST manipulations.
+    % \\
+    \noindent
+    \textbf{
+      \faIcon{user}
+      \href{https://github.com/diohabara/pychd}{\faIcon{github}}
+      \href{https://pypi.org/project/pychd/}{\faIcon{python}}
+      \underline{PyChD}: The ChatGPT-powered decompiler for Python
+    }
+        Enable decompiling Python using OpenAI API, with which you can easily retrieve \verb|.py| code from \verb|.pyc| code.
+    \\
+    % \noindent
+    % \textbf{
+    %   \faIcon{user}
+    %   \href{https://github.com/diohabara/MuscleFuck}{\faIcon{github}}
+    %   \underline{MuscleF**k}: BrainF**k interpreter on Raspberry Pi in Python
+    % }
+    %     Crafted a programming language on a Raspberry Pi so that people can exercise while programming.
+    % \\
+    \noindent
+    \textbf{
+      \faIcon{user}
+      \href{https://github.com/diohabara/honjitsu}{\faIcon{github}}
+      \underline{honjitsu}: Daily report bot in Rust
+    }
+        Created a bot that collects personal information and makes a daily report.
+    \\
+    % \noindent
+    % \textbf{
+    %   \faIcon{user}
+    %   \href{https://github.com/diohabara/ccc}{\faIcon{github}}
+    %   \underline{ccc}: A toy C compiler in C
+    % }
+    %     Implemented a toy C compiler in C with a lexer, parser and code generator.
+    %     Generate an x86-64 assembly.
+    % \\
+    \noindent
+    \textbf{
+      \faIcon{user}
+      \href{https://github.com/diohabara/nsa-codebreaker-challenge2022}{\faIcon{github}}
+      Top 10\% NSA Codebreaker Challenge 2022
+    }
+        Participated in a security competition organized by NSA. Ranked within the top 10\% among 2000 people.
+    \\
+    %%% Multi-people Projects
+    \noindent
+    \textbf{
+      \faIcon{users}
+      \href{https://ctftime.org/event/1959}{\faIcon{link}}
+      Top 4 in TexSAW CTF competition 2023
+    }
+        Teamed up with CSG members and worked on solving CTF challenges in 2023.
+    \\
+    \noindent
+    \textbf{
+      \faIcon{users}
+      \href{https://github.com/CharlesAverill/prettybird}{\faIcon{github}}
+      \href{https://pldi23.sigplan.org/details/pldi-2023-src/9/Prettybird-A-DSL-for-Programmatic-Font-Compilation}{\faIcon{link}}
+      Prettybird:  a compiler to help design fonts in Python
+    }
+        Collaborated with one member of CSG. Co-designed
+        and co-organized the road map of the language. Also helped him write the paper and gave its guidelines. Accepted in the \emph{PLDI 2023 Student Research Competition}.
+    \\
+    \noindent
+    \textbf{
+      \faIcon{users}
+      \href{https://www.iwls.org/iwls2021/}{\faIcon{link}}
+      Top 3 in IWLS 2021 Programming Contest
+    }
+        Collaborated on the logic \& synthesis section, evaluating various methods.
+% Yukio Miyasaka, Sai Sanjeet, Xinpei Zhang, Mingfei Yu, Qingyang Yi, Ryogo Koike, Takemaru Kadoi, Masahiro Fujita, Bidhu Datta Sahoo, Virendra Singh, John Wawrzynek, "3rd place: IWLS 2021 Programming Contest, ML + LS (Part II)," International Workshop on Logic & Synthesis (IWLS), 2021.
+    \\
+    \noindent
+    \textbf{
+      \faIcon{users}
+      \href{http://iccad-contest.org/2021/Winners.html}{\faIcon{link}}
+      Top 4 (Honorable Mention) in 2021 CAD Contest, ICCAD X-value Equivalence Check
+    }
+        Focused on the circuit generation section, appraising distinct approaches.
+% Yukio Miyasaka, Xinpei Zhang, Mingfei Yu, Qingyang Yi, Masahiro Fujita, "Honorable Mention: 2020 CAD Contest, X-value Equivalence Checking," International Conference on Computer-Aided Design (ICCAD), 2020.
+  \end{multicols}
+
+% \section*{\faIcon{thumbs-up} Technical Skills}
+%     % lang
+%     C/C++,
+%     Coq,
+%     Java,
+%     Scala,
+%     Python,
+%     OCaml,
+%     Rust,
+%     Go,
+%     ShellScript,
+%     JavaScript,
+%     TypeScript,
+%     Ruby,
+%     R,
+%     % framework, db, misc
+%     Apache Flink,
+%     Apache Kafka,
+%     Apache Spark,
+%     Docker,
+%     Jenkins,
+%     Numpy,
+%     Pandas,
+%     PyTorch,
+%     Ruby on Rails,
+%     PostgreSQL,
+%     RocksDB,
+%     ggplot2,
+%     % service/cloud
+%     AWS EMR,
+%     AWS S3,
+%     AWS EC2,
+%     Terraform,
+%     HuggingFace,
+%     GitHub Actions
+
+\end{document}
