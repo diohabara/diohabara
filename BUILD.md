@@ -12,9 +12,11 @@ If you don't have Nix installed, follow the official instructions:
 Navigate to the project root directory where `flake.nix` is located.
 
 To build the `resume.pdf` using Nix:
+
 ```bash
 nix build .#resume
 ```
+
 This will generate `resume.pdf` in the `result/share/doc/` directory (symlinked to `result` in the project root).
 
 ## 3. Using CI/CD (GitHub Actions)
