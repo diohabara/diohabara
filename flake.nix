@@ -12,7 +12,7 @@
     };
   };
 
-  outputs = { self, nixpkgs, typst-packages }:
+  outputs = { self, nixpkgs, typst-packages }: 
     let
       # Define fontAwesomeFree and fontsConf once for reuse
       fontAwesomeFree = pkgs: pkgs.stdenv.mkDerivation {
