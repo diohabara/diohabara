@@ -11,22 +11,11 @@ If you don't have Nix installed, follow the official instructions:
 
 Navigate to the project root directory where `flake.nix` is located.
 
-### Enter the development shell (optional)
-To get a shell with Typst and Font Awesome available:
+To build the `resume.pdf` using Nix:
 ```bash
-nix develop
+nix build .#resume
 ```
-You can then compile `resume.typ` directly:
-```bash
-typst compile resume.typ
-```
-
-### Compile directly
-To compile the PDF without entering the development shell:
-```bash
-nix develop -c typst compile resume.typ
-```
-This will generate `resume.pdf` in the same directory.
+This will generate `resume.pdf` in the `result/share/doc/` directory (symlinked to `result` in the project root).
 
 ## 3. Using CI/CD (GitHub Actions)
 

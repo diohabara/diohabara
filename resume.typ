@@ -1,132 +1,140 @@
-// resume.typ - Emoji version (with layout fixes)
+#import "@preview/basic-resume:0.2.8": *
 
-#let heading-style(title) = {
-  align(left)[ #text(1.1em, weight: "bold")[#title] ]
-  line(length: 100%, stroke: 0.4pt)
-  v(0.3em) # Adjusted v value
-}
+// Put your personal information here, replacing mine
+#let name = "Stephen Xu"
+#let location = "San Diego, CA"
+#let email = "stxu@hmc.edu"
+#let github = "github.com/stuxf"
+#let linkedin = "linkedin.com/in/stuxf"
+#let phone = "+1 (xxx) xxx-xxxx"
+#let personal-site = "stuxf.dev"
 
-#let entry(icon, title, company, date, location, body) = {
-  grid(
-    columns: (auto, 1fr),
-    row-gutter: 0.15em, # Adjusted row-gutter
-    [#icon #text(weight: "bold")[#title] #h(0.5em) #text(company)], # Combined title and company
-    align(right)[#date #h(1em) #location],
-    body, # Removed empty row
-  )
-  v(0.3em) # Adjusted v value
-}
-
-#show: doc => {
-  set document(author: "Takemaru KADOI", title: "Resume")
-  set text(size: 9.0pt) # Reverted font size
-  set par(leading: 0.55em) 
-  set page(
-    margin: (x: 15mm, top: 9mm, bottom: 9mm),
-    header: align(center)[
-      #grid(
-        columns: (auto, auto, auto, auto),
-        column-gutter: 1.5em,
-        "📄 Takemaru KADOI",
-        link("mailto:diohabara@gmail.com")[📧 diohabara@gmail.com],
-        link("https://github.com/diohabara")[💻 GitHub],
-        link("https://www.linkedin.com/in/takemaru-kadoi")[💼 LinkedIn],
-      )
-    ]
-  )
-  doc
-}
-
-#align(center)[
-  #text(1.4em, weight: "bold")[Curriculum Vitae/Resume]
-  #v(0.1em) # Adjusted v value
-  Takemaru KADOI
-]
-
-#heading-style("🎓 Education")
-
-#entry(
-  [],
-  "Master of Science in Computer Science",
-  "The University of Texas at Dallas",
-  "08/2022 - 05/2024",
-  "Richardson, Texas",
-  [Researched software engineering and security topics supervised by Asst. Prof. Kangkook JEE. Officer of UTDallas Computer Security Group(CSG).]
+#show: resume.with(
+  author: name,
+  // All the lines below are optional.
+  // For example, if you want to to hide your phone number:
+  // feel free to comment those lines out and they will not show.
+  location: location,
+  email: email,
+  github: github,
+  linkedin: linkedin,
+  phone: phone,
+  personal-site: personal-site,
+  accent-color: "#26428b",
+  font: "New Computer Modern",
+  paper: "us-letter",
+  author-position: left,
+  personal-info-position: left,
 )
 
-#entry(
-  [],
-  "Bachelor of Engineering in Electrical Engineering & Computer Science",
-  "The University of Tokyo",
-  "04/2017 - 03/2022",
-  "Tokyo, Japan",
-  [Wrote a bachelor thesis #link("https://github.com/diohabara/bthesis")[_Type- and Sequential Effect-Guided Programming by Example_] on program synthesis using a type and effect system and given examples supervised by Prof. Masahiro FUJITA.]
+/*
+* Lines that start with == are formatted into section headings
+* You can use the specific formatting functions if needed
+* The following formatting functions are listed below
+* #edu(dates: "", degree: "", gpa: "", institution: "", location: "", consistent: false)
+* #work(company: "", dates: "", location: "", title: "")
+* #project(dates: "", name: "", role: "", url: "")
+* certificates(name: "", issuer: "", url: "", date: "")
+* #extracurriculars(activity: "", dates: "")
+* There are also the following generic functions that don't apply any formatting
+* #generic-two-by-two(top-left: "", top-right: "", bottom-left: "", bottom-right: "")
+* #generic-one-by-two(left: "", right: "")
+*/
+== Education
+
+#edu(
+  institution: "Harvey Mudd College",
+  location: "Claremont, CA",
+  dates: dates-helper(start-date: "Aug 2023", end-date: "May 2027"),
+  degree: "Bachelor's of Science, Computer Science and Mathematics",
+
+  // Uncomment the line below if you want edu formatting to be consistent with everything else
+  // consistent: true
 )
+- Cumulative GPA: 4.0\/4.0 | Dean's List, Harvey S. Mudd Merit Scholarship, National Merit Scholarship
+- Relevant Coursework: Data Structures, Program Development, Microprocessors, Abstract Algebra I: Groups and Rings, Linear Algebra, Discrete Mathematics, Multivariable & Single Variable Calculus, Principles and Practice of Comp Sci
 
+== Work Experience
 
-#heading-style("💼 Experience")
-
-#entry(
-  "🔬",
-  "Research Assistant",
-  "UTDallas",
-  "05/2023 - 11/2023",
-  "Richardson, Texas",
-  [Conducting research about a secure decompiler and a secure database management system under the supervision of Asst. Prof. Kangkook JEE.]
+#work(
+  title: "Subatomic Shepherd and Caffeine Connoisseur",
+  location: "Atomville, CA",
+  company: "Microscopic Circus, Schrodinger's University",
+  dates: dates-helper(start-date: "May 2024", end-date: "Present"),
 )
+- Played God with tiny molecules, making them dance to uncover the secrets of the universe
+- Convinced high-performance computers to work overtime without unions, reducing simulation time by 50%
+- Wowed a room full of nerds with pretty pictures of invisible things and imaginary findings
 
-#entry(
-  "🧑‍🏫",
-  "Teaching Assistant",
-  "UTDallas",
-  "01/2023 - 05/2024",
-  "Richardson, Texas",
-  [
-    *2023 Spring*: 🛡️ CS 4301 Cyber Attacks and Defense Laboratory (CANDL) #h(1em) 🛡️ CS 6348 Data and Applications Security \ 
-    *2023 Fall*: 🛡️ CS 6332 Systems Security and Malicious Code Analysis #h(1em) 💻 CS 4348 Operating System Concept \ 
-    *2024 Spring*: 🌐 CS 6371, 4301 Advanced Programming Languages #h(1em) 🌐 CS 4337 Programming Language Paradigms
-  ]
+#work(
+  title: "AI Wrangler and Code Ninja",
+  location: "Silicon Mirage, CA",
+  company: "Organic Stupidity Startup",
+  dates: dates-helper(start-date: "Dec 2023", end-date: "Mar 2024"),
 )
+- Taught robots to predict when (and how much!) humans will empty their wallets at the doctor's office
+- Developed HIPAA-compliant digital signatures, because doctors' handwriting wasn't illegible enough already
+- Turned spaghetti code into a gourmet dish, making other interns drool with envy
 
-#entry(
-  "💼",
-  "Software Engineer Intern",
-  "Indeed",
-  "06/2022 - 08/2022",
-  "Tokyo, Japan",
-  [Prepared a PoC data pipeline for its data infrastructure so that the data team and other teams could easily collaborate with the same API in different programming languages. The implementation allowed more than 10 people to analyze the data cooperatively.]
+#work(
+  title: "Digital Playground Architect",
+  location: "The Cloud",
+  company: "Pixels & Profit Interactive",
+  dates: dates-helper(start-date: "Jun 2020", end-date: "May 2023"),
 )
+- Scaled user base from 10 to 2000+, accidentally becoming a small wealthy nation in the process
+- Crafted Bash scripts so clever they occasionally made other engineers weep with joy
+- Automated support responses, reducing human interaction to a level that would make introverts proud
+- Built a documentation site that actually got read, breaking the ancient RTFM curse
 
-#entry(
-  "💼",
-  "Software Engineer Intern",
-  "Hatena",
-  "02/2022 - 06/2022",
-  "Tokyo, Japan",
-  [Migrated and enabled parallelism of the CI/CD pipelines from Jenkins to GitHub Actions and sped them up by more than 3x, resulting in better production quality by improving the development cycle and increasing the number of reviews and deployments.]
+#work(
+  title: "Code Conjurer Intern",
+  location: "Silicon Suburb, CA",
+  company: "Bits & Bytes Consulting",
+  dates: dates-helper(start-date: "Jun 2022", end-date: "Aug 2022"),
 )
+- Developed a cross-platform mobile app that turned every user into a potential paparazzi
+- Led a security overhaul, heroically saving the company from the menace of "password123"
 
-#entry(
-  "💼",
-  "Software Engineer Intern",
-  "FLYWHEEL",
-  "07/2020 - 08/2020",
-  "Tokyo, Japan",
-  [Introduced the speed layer of the lambda architecture in the corporate data platform. The new layer potentially expanded the corporate business because streaming data analytic would be helpful for real-time analysis.]
+== Projects
+
+#project(
+  name: "Hyperschedule",
+  // Role is optional
+  role: "Maintainer",
+  // Dates is optional
+  dates: dates-helper(start-date: "Nov 2023", end-date: "Present"),
+  // URL is also optional
+  url: "hyperschedule.io",
 )
+- Maintain open-source scheduler used by 7000+ users at the Claremont Consortium with TypeScript, React and MongoDB
+  - Manage PR reviews, bug fixes, and coordinate with college for releasing scheduling data and over \$1500 of yearly funding
+- Ensure 99.99% uptime during peak loads of 1M daily requests during course registration through redundant servers
 
-#heading-style("💻 Projects")
+== Extracurricular Activities
 
-#columns(2, gutter: 1.5em)[
-  #link("https://github.com/diohabara/pychd")[PyChD]: The ChatGPT-powered decompiler for Python. Enable decompiling Python using OpenAI API.
+#extracurriculars(
+  activity: "Capture The Flag Competitions",
+  dates: dates-helper(start-date: "Jan 2021", end-date: "Present"),
+)
+- Founder of Les Amateurs (#link("https://amateurs.team")[amateurs.team]), currently ranked \#4 US, \#33 global on CTFTime (2023: \#4 US, \#42 global)
+- Organized AmateursCTF 2023 and 2024, with 1000+ teams solving at least one challenge and \$2000+ in cash prizes
+  - Scaled infrastructure using GCP, Digital Ocean with Kubernetes and Docker; deployed custom software on fly.io
+- Qualified for DEFCON CTF 32 and CSAW CTF 2023, two of the most prestigious cybersecurity competitions globally
 
-  #link("https://github.com/diohabara/honjitsu")[honjitsu]: Daily report bot in Rust. Created a bot that collects personal information and makes a daily report.
+// #extracurriculars(
+//   activity: "Science Olympiad Volunteering",
+//   dates: "Sep 2023 --- Present"
+// )
+// - Volunteer and write tests for tournaments, including LA Regionals and SoCal State \@ Caltech
 
-  Top 10% NSA Codebreaker Challenge 2022. Participated in a security competition organized by NSA. Ranked within the top 10% among 2000 people.
+// #certificates(
+//   name: "OSCP",
+//   issuer: "Offensive Security",
+//   // url: "",
+//   date: "Oct 2024",
+// )
 
-  #link("https://ctftime.org/event/1959")[Top 4 in TexSAW CTF competition 2023]. Teamed up with CSG members and worked on solving CTF challenges in 2023.
-
-  #link("https://github.com/CharlesAverill/prettybird")[Prettybird]: a compiler to help design fonts in Python. Collaborated with one member of CSG. Co-designed and co-organized the road map of the language.
-
-  #link("http://iccad-contest.org/2021/Winners.html")[Top 4 in 2021 CAD Contest]. Focused on the circuit generation section, appraising distinct approaches.
-]
+== Skills
+- *Programming Languages*: JavaScript, Python, C/C++, HTML/CSS, Java, Bash, R, Flutter, Dart
+- *Technologies*: React, Astro, Svelte, Tailwind CSS, Git, UNIX, Docker, Caddy, NGINX, Google Cloud Platform
