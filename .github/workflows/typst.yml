@@ -1,11 +1,12 @@
-name: Build Typst Resume
+name: "Build Typst Resume"
 
 on:
   push:
     branches:
       - master
     paths:
-      - 'resume.typ'
+      - "resume.typ"
+      - ".github/workflows/typst.yml"
 
 jobs:
   build:
