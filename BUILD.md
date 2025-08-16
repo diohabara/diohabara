@@ -1,27 +1,27 @@
 # How to Build
 
-This document describes how to build the `resume.pdf` from the `resume.typ` source file using Nix.
+This document describes how to build the `resume.pdf` from the `resume.typ` source file using Typst.
 
-## 1. Install Nix
+## 1. Install Typst
 
-If you don't have Nix installed, follow the official instructions:
-[https://nixos.org/download/](https://nixos.org/download/)
+If you don't have Typst installed, follow the official instructions:
+[https://github.com/typst/typst#installation](https://github.com/typst/typst#installation)
 
 ## 2. Build the PDF
 
-Navigate to the project root directory where `flake.nix` is located.
+Navigate to the project root directory.
 
-To build the `resume.pdf` using Nix:
+To build the `resume.pdf` using Typst:
 
 ```bash
-nix build .#resume
+typst compile resume.typ
 ```
 
-This will generate `resume.pdf` in the `result/share/doc/` directory (symlinked to `result` in the project root).
+This will generate `resume.pdf` in the project root.
 
 ## 3. Using CI/CD (GitHub Actions)
 
-This repository is configured with a GitHub Actions workflow that automatically builds the PDF using Nix.
+This repository is configured with a GitHub Actions workflow that automatically builds the PDF.
 
-- **Trigger**: The workflow runs automatically every time you push a commit to the `main` branch.
-- **Artifacts**: After a successful run, you can download the generated `resume.pdf` from the "Artifacts" section of the workflow summary page in the "Actions" tab of this repository.
+- **Trigger**: The workflow runs automatically every time you push a commit to the `main` branch that changes `resume.typ`.
+- **Artifacts**: After a successful run, the generated `resume.pdf` will be available as a release artifact.
