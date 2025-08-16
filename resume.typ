@@ -16,7 +16,6 @@
 == Technical Skills
 - *Programming Languages*: C++ (Advanced), Python (Advanced), Java, JavaScript/TypeScript, SQL
 - *Technologies*: AWS, Docker, Git, React/React Native, Apache Flink, Spark, DuckDB, Databricks
-- *Databases*: MySQL, PostgreSQL, Redis, DynamoDB, SQLite
 - *Financial Systems*: Risk Analysis, Portfolio Management, Data Analytics, Bloomberg Terminal
 
 == Education
@@ -38,7 +37,7 @@
 
 == Work Experience
 #work(
-  title: "Software Engineer",
+  title: "Software Engineer I",
   company: "Sony Interactive Entertainment",
   location: "Tokyo, Japan",
   dates: "Feb 2025 - Present",
@@ -61,25 +60,6 @@
 - Supported development of quantitative models for *portfolio optimization and risk assessment*
 - Created *Streamlit dashboards* for interactive data visualization and reporting
 - Reduced data processing time by *40%* through infrastructure optimization
-
-#work(
-  title: "Software Engineer Intern",
-  company: "Indeed",
-  location: "Tokyo, Japan",
-  dates: "Jun 2022 - Aug 2022",
-)
-- Developed PoC data pipeline using *Apache Flink* for real-time stream processing
-- Created shared API enabling cross-language communication between *Python and Java* services
-- Resulted in *10+ teams* collaborating effectively with *3x faster* data processing
-
-#work(
-  title: "Software Engineer Intern",
-  company: "Hatena",
-  location: "Tokyo, Japan",
-  dates: "Feb 2022 - Jun 2022",
-)
-- Migrated CI/CD pipelines from *Jenkins to GitHub Actions* with parallel execution
-- Achieved *3x improvement* in build times through pipeline optimization
 
 == Selected Projects
 - *#link("https://github.com/diohabara/pychd")[PyChD: Python Decompiler]* - Contributed to research implementing methodologies from #link("https://www.computer.org/csdl/proceedings-article/sp/2025/223600a052/21B7QZB86cg")[PYLINGUAL paper]
