@@ -1,11 +1,11 @@
-name: "Build Typst Resume"
+name: Build Typst Resume
 
 on:
   push:
     branches:
-      - main
+      - master
     paths:
-      - "resume.typ"
+      - 'resume.typ'
 
 jobs:
   build:
