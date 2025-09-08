@@ -42,9 +42,9 @@
   location: "Tokyo, Japan",
   dates: "Feb 2025 - Present",
 )
-- Design and implement *DRM systems in C/C++* to protect digital content (games) and enforce license compliance
+- Design and implement *DRM systems* in *C*\/*C++* to protect digital content (games) and enforce license compliance
 - Build user interfaces with *React Native* for internal tools and administrative dashboards
-- Analyze system and usage data with *Python and Databricks*
+- Analyze system and usage data with *Python* and *Databricks*
 - Collaborate with cross-functional teams to enhance system reliability and scalability
 - Implement *multi-threaded solutions* for performance optimization
 
@@ -68,9 +68,8 @@
 - Led migration of data pipelines to *AWS cloud infrastructure* for automated portfolio monitoring
 - Designed and implemented *cloud-based ETL processes* to streamline data workflows
 - Supported development of quantitative models for *portfolio optimization and risk assessment*
-- Created *Streamlit dashboards* for interactive data visualization and reporting
+- Created *Streamlit*, *Tableau* dashboards for interactive data visualization and reporting
 - Reduced data processing time by *40%* through infrastructure optimization
 
 == Selected Projects
-- *#link("https://github.com/diohabara/pychd")[PyChD: Python Decompiler]* - Contributed to research implementing methodologies from #link("https://www.computer.org/csdl/proceedings-article/sp/2025/223600a052/21B7QZB86cg")[PYLINGUAL paper]
-- *NSA Codebreaker Challenge 2022* - Ranked as the best 10% among 2000 participants in CTF by NSA
+- *#link("https://github.com/diohabara/pychd")[PyChD: Python Decompiler]* - Contributed to research about decompilation of Python code #link("https://www.computer.org/csdl/proceedings-article/sp/2025/223600a052/21B7QZB86cg")[PYLINGUAL paper]
