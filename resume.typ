@@ -49,6 +49,16 @@
 - Implement *multi-threaded solutions* for performance optimization
 
 #work(
+  title: "Data Engineering Consultant",
+  company: "Yoii",
+  location: "Tokyo, Japan",
+  dates: "May 2025 - Present",
+)
+- Designed and implemented data pipelines applying *Slowly Changing Dimensions (SCD)* to ensure data integrity and historical tracking for financial records.
+- Ensured high availability and seamless updates of the data pipeline by implementing a *blue-green deployment* strategy.
+- Developed robust data infrastructure to support financial services, enhancing data reliability for invoice factoring and credit assessment.
+
+#work(
   title: "Quantitative Analyst",
   company: "Government Pension Investment Fund",
   location: "Tokyo, Japan",
