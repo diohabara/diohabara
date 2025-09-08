@@ -54,7 +54,7 @@
   location: "Tokyo, Japan",
   dates: "May 2025 - Present",
 )
-- Designed and implemented data pipelines applying *Slowly Changing Dimensions (SCD)* to ensure data integrity and historical tracking for financial records.
+- Designed and implemented data pipelines applying *Slowly Changing Dimensions (SCD)* to ensure data integrity and historical tracking for financial records with *dbt* and *Prefect*.
 - Ensured high availability and seamless updates of the data pipeline by implementing a *blue-green deployment* strategy.
 - Developed robust data infrastructure to support financial services, enhancing data reliability for invoice factoring and credit assessment.
 
@@ -66,7 +66,7 @@
 )
 - Served as quantitative analyst with focus on portfolio management for *￥200+ trillion* investments
 - Led migration of data pipelines to *AWS cloud infrastructure* for automated portfolio monitoring
-- Designed and implemented *cloud-based ETL processes* to streamline data workflows
+- Designed and implemented *cloud-based ETL processes* with *Pandas* and *Polars*
 - Supported development of quantitative models for *portfolio optimization and risk assessment*
 - Created *Streamlit*, *Tableau* dashboards for interactive data visualization and reporting
 - Reduced data processing time by *40%* through infrastructure optimization
