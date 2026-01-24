@@ -42,17 +42,16 @@
   location: "Tokyo, Japan",
   dates: "Feb 2025 - Present",
 )
-- Design and implement *DRM systems* in *C*\/*C++* to protect digital content (games) and enforce license compliance
+- Design and implement *distributed DRM systems* in *C*\/*C++23* to protect digital content (games) and enforce license compliance
 - Build user interfaces with *React Native* for internal tools and administrative dashboards
-- Analyze system and usage data with *Python* and *Databricks*
-- Collaborate with cross-functional teams to enhance system reliability and scalability
 - Implement *multi-threaded solutions* for performance optimization
+- Analyze system and usage data with *Python* and *Databricks* to improve security workflows and inform product decisions
 
 #work(
   title: "Data Engineering Consultant",
-  company: "Yoii",
+  company: "Self Employed",
   location: "Tokyo, Japan",
-  dates: "May 2025 - Present",
+  dates: "May 2025 - Jan 2026",
 )
 - Designed and implemented data pipelines applying *Slowly Changing Dimensions (SCD)* to ensure data integrity and historical tracking for financial records with *dbt* and *Prefect*.
 - Ensured high availability and seamless updates of the data pipeline by implementing a *blue-green deployment* strategy.
@@ -65,11 +64,9 @@
   dates: "Jun 2024 - Jan 2025",
 )
 - Served as quantitative analyst with focus on portfolio management for *￥200+ trillion* investments
-- Led migration of data pipelines to *AWS cloud infrastructure* for automated portfolio monitoring
-- Designed and implemented *cloud-based ETL processes* with *Pandas* and *Polars*
-- Supported development of quantitative models for *portfolio optimization and risk assessment*
-- Created *Streamlit*, *Tableau* dashboards for interactive data visualization and reporting
-- Reduced data processing time by *40%* through infrastructure optimization
+- Led migration of data pipelines to *AWS cloud infrastructure* for automated portfolio monitoring - Designed and implemented *cloud-based ETL processes* with *Pandas* and *Polars* - Supported development of quantitative models for *portfolio optimization and risk assessment*
+- Created *Streamlit* and *Tableau* dashboards for interactive data visualization and reporting
+- Reduced data processing time by *40%* through optimization
 
 == Selected Projects
 - *#link("https://github.com/diohabara/pychd")[PyChD: Python Decompiler]* - Contributed to research about decompilation of Python code #link("https://www.computer.org/csdl/proceedings-article/sp/2025/223600a052/21B7QZB86cg")[PYLINGUAL paper]
