@@ -54,7 +54,7 @@
   dates: "May 2025 - Jan 2026",
 )
 - Designed and implemented data pipelines applying *Slowly Changing Dimensions (SCD)* to ensure data integrity and historical tracking for financial records with *dbt* and *Prefect*.
-- Ensured high availability and seamless updates of the data pipeline by implementing a *blue-green deployment* strategy.
+- Ensured high availability using incremental modeling
 - Developed robust data infrastructure to support financial services, enhancing data reliability for invoice factoring and credit assessment.
 
 #work(
