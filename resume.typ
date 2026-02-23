@@ -14,8 +14,8 @@
 )
 
 == Technical Skills
-- *Programming Languages*: C++ (Advanced), Python (Advanced), Java, JavaScript/TypeScript, SQL
-- *Technologies*: AWS, Docker, Git, React/React Native, Apache Flink, Spark, DuckDB, Databricks
+- *Programming Languages*: C++23 (Advanced), Python (Advanced), C (Advanced), Java, JavaScript/TypeScript, SQL
+- *Technologies*: AWS, Docker, Git, React, Apache Flink, Spark, DuckDB, Databricks
 - *Financial Systems*: Risk Analysis, Portfolio Management, Data Analytics, Bloomberg Terminal
 
 == Education
@@ -43,8 +43,8 @@
   dates: "Feb 2025 - Present",
 )
 - Design and implement *distributed DRM systems* in *C*\/*C++23* to protect digital content (games) and enforce license compliance
-- Build user interfaces with *React Native* for internal tools and administrative dashboards
 - Implement *multi-threaded solutions* for performance optimization
+- Build user interfaces with *React Native* for internal tools and administrative dashboards
 - Analyze system and usage data with *Python* and *Databricks* to improve security workflows and inform product decisions
 
 #work(
