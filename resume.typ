@@ -15,7 +15,7 @@
 
 == Technical Skills
 - *Programming Languages*: C++23 (Advanced), Python (Advanced), C (Advanced), Java, JavaScript/TypeScript, SQL
-- *Technologies*: AWS, Docker, Git, React, Apache Flink, Spark, DuckDB, Databricks
+- *Technologies*: AWS, GCP, Vercel, Cloudflare, Docker, Git, React, Next.js, FastAPI, dbt, Prefect, Snowflake, Apache Flink, Spark, DuckDB, Databricks
 - *Financial Systems*: Risk Analysis, Portfolio Management, Data Analytics, Bloomberg Terminal
 
 == Education
@@ -42,20 +42,18 @@
   location: "Tokyo, Japan",
   dates: "Feb 2025 - Present",
 )
-- Design and implement *distributed DRM systems* in *C*\/*C++23* to protect digital content (games) and enforce license compliance
-- Implement *multi-threaded solutions* for performance optimization
+- Design and implement distributed DRM and OS-level security systems in *C*\/*C++23* to protect digital content (games) and enforce license compliance
 - Build user interfaces with *React Native* for internal tools and administrative dashboards
 - Analyze system and usage data with *Python* and *Databricks* to improve security workflows and inform product decisions
 
 #work(
-  title: "Data Engineering Consultant",
-  company: "Self Employed",
+  title: "Freelance Data Engineer / Software Engineer",
+  company: "Self-Employed (Multiple Clients)",
   location: "Tokyo, Japan",
-  dates: "May 2025 - Jan 2026",
+  dates: "May 2025 - Present",
 )
-- Designed and implemented data pipelines applying *Slowly Changing Dimensions (SCD)* to ensure data integrity and historical tracking for financial records with *dbt* and *Prefect*.
-- Ensured high availability using incremental modeling
-- Developed robust data infrastructure to support financial services, enhancing data reliability for invoice factoring and credit assessment.
+- Financial Services Client: Built incremental data pipelines processing *tens of GBs* with *dbt*, *Prefect*, *Snowflake*, and Change Data Capture (CDC) on *AWS*, achieving *2x+ faster* processing for invoice factoring and credit assessment
+- Real Estate Client: Developing a property/contract management platform with analytics dashboard using *FastAPI*, *Next.js*, *GCP*, *Vercel*, and *Cloudflare*
 
 #work(
   title: "Quantitative Analyst",
@@ -63,10 +61,9 @@
   location: "Tokyo, Japan",
   dates: "Jun 2024 - Jan 2025",
 )
-- Served as quantitative analyst with focus on portfolio management for *￥200+ trillion* investments
-- Led migration of data pipelines to *AWS cloud infrastructure* for automated portfolio monitoring - Designed and implemented *cloud-based ETL processes* with *Pandas* and *Polars* - Supported development of quantitative models for *portfolio optimization and risk assessment*
-- Created *Streamlit* and *Tableau* dashboards for interactive data visualization and reporting
-- Reduced data processing time by *40%* through optimization
+- Managed portfolio analytics for *￥200+ trillion* investments, developing quantitative models for optimization and risk assessment
+- Migrated data pipelines to *AWS* with *Pandas* and *Polars*, reducing processing time by *40%*
+- Built interactive dashboards with *Streamlit* and *Tableau* for portfolio monitoring and reporting
 
 == Selected Projects
 - *#link("https://github.com/diohabara/pychd")[PyChD: Python Decompiler]* - Contributed to research about decompilation of Python code #link("https://www.computer.org/csdl/proceedings-article/sp/2025/223600a052/21B7QZB86cg")[PYLINGUAL paper]
