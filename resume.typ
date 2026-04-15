@@ -14,9 +14,10 @@
 )
 
 == Technical Skills
-- *Programming Languages*: C++23 (Advanced), Python (Advanced), C (Advanced), Java, JavaScript/TypeScript, SQL
-- *Technologies*: AWS, GCP, Vercel, Cloudflare, Docker, Git, React, Next.js, FastAPI, dbt, Prefect, Snowflake, Apache Flink, Spark, DuckDB, Databricks
-- *Financial Systems*: Risk Analysis, Portfolio Management, Data Analytics, Bloomberg Terminal
+- *Programming Languages*: C++23 (Advanced), Python (Advanced), C (Advanced), SQL
+- *Systems & Data*: Concurrent Programming, Systems Programming, Performance Optimization, Data Pipelines, Quantitative Analysis
+- *Technologies*: Unix-like Systems, Windows, AWS, Docker, Podman, Git, Pandas, Polars, dbt, Prefect, Snowflake, Databricks, Spark, DuckDB
+- *Finance*: Portfolio Analytics, Risk Analysis, Bloomberg Terminal
 
 == Education
 #edu(
@@ -25,15 +26,13 @@
   dates: "Aug 2022 - Aug 2024",
   degree: "Master of Science in Computer Science",
 )
-- Researched software engineering and security topics supervised by Asst. Prof. Kangkook JEE. Officer of UTDallas Computer Security Group (CSG). GPA: 3.8/4.0
 
 #edu(
   institution: "The University of Tokyo",
   location: "Tokyo, Japan",
   dates: "Apr 2017 - Mar 2022",
-  degree: "Bachelor of Engineering in Electrical Engineering & Computer Science",
+  degree: "Bachelor of Engineering in Information and Communication Engineering",
 )
-- Wrote a bachelor thesis #link("https://github.com/diohabara/bthesis")[Type- and Sequential Effect-Guided Programming by Example] on program synthesis supervised by Prof. Masahiro FUJITA.
 
 == Work Experience
 #work(
@@ -42,18 +41,17 @@
   location: "Tokyo, Japan",
   dates: "Feb 2025 - Present",
 )
-- Design and implement distributed DRM and OS-level security systems in *C*\/*C++23* to protect digital content (games) and enforce license compliance
-- Build user interfaces with *React Native* for internal tools and administrative dashboards
-- Analyze system and usage data with *Python* and *Databricks* to improve security workflows and inform product decisions
+- Develop OS- and security-level production software in *C*\/*C++23* for *PlayStation OS*, focused on concurrency, correctness, and reliability
+- Build reporting workflows in *Python* and *Databricks* to analyze market issues and support cross-team security operations
 
 #work(
-  title: "Freelance Data Engineer / Software Engineer",
-  company: "Self-Employed (Multiple Clients)",
+  title: "Software Engineer / Data Engineer",
+  company: "Self-Employed",
   location: "Tokyo, Japan",
   dates: "May 2025 - Present",
 )
-- Financial Services Client: Built incremental data pipelines processing *tens of GBs* with *dbt*, *Prefect*, *Snowflake*, and Change Data Capture (CDC) on *AWS*, achieving *2x+ faster* processing for invoice factoring and credit assessment
-- Real Estate Client: Developing a property/contract management platform with analytics dashboard using *FastAPI*, *Next.js*, *GCP*, *Vercel*, and *Cloudflare*
+- *Financial Services Client*: Built and optimized *AWS*-based CDC pipelines processing *tens of GBs* with *dbt*, *Prefect*, and *Snowflake*, cutting batch runtime by *2x+* and reducing cloud compute cost for credit workflows
+- *Real Estate Client*: Sole engineer for a property and contract management platform, owning APIs, admin tools, analytics, deployment, and operations across *FastAPI*, *Next.js*, *GCP*, *Vercel*, and *Cloudflare*
 
 #work(
   title: "Quantitative Analyst",
@@ -61,9 +59,6 @@
   location: "Tokyo, Japan",
   dates: "Jun 2024 - Jan 2025",
 )
-- Managed portfolio analytics for *￥200+ trillion* investments, developing quantitative models for optimization and risk assessment
-- Migrated data pipelines to *AWS* with *Pandas* and *Polars*, reducing processing time by *40%*
-- Built interactive dashboards with *Streamlit* and *Tableau* for portfolio monitoring and reporting
-
-== Selected Projects
-- *#link("https://github.com/diohabara/pychd")[PyChD: Python Decompiler]* - Contributed to research about decompilation of Python code #link("https://www.computer.org/csdl/proceedings-article/sp/2025/223600a052/21B7QZB86cg")[PYLINGUAL paper]
+- Managed portfolio analytics for *JPY 200+ trillion* in assets, developing quantitative models for optimization and risk assessment
+- Migrated analytics pipelines to *AWS* with *Pandas* and *Polars*, reducing runtime by *40%*
+- Built monitoring dashboards in *Streamlit* and *Tableau* for portfolio reporting
